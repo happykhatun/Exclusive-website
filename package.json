@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",
+    "countdown-date-time": "^1.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-slick": "^0.31.0",
