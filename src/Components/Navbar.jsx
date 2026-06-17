@@ -37,7 +37,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <hr className='border-b mt-4' />
+                <hr className='border border-secondary/20 mt-4' />
             </nav>
         </>
     )

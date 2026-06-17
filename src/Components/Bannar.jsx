@@ -12,23 +12,24 @@ const Bannar = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-         appendDots: dots => (
-      <div className='relative'>
-        <ul className='absolute bottom-8 left-[50%] translate-x-[-50%]' style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
-    customPaging: i => (
-      <div className='bg-[#808080] w-3 h-3 rounded-full' >
-      </div>
-    )
+        appendDots: dots => (
+            <div className='relative'>
+                <ul className='absolute bottom-8 left-[50%] translate-x-[-50%]' style={{ margin: "0px" }}> {dots} </ul>
+            </div>
+        ),
+        customPaging: i => (
+            <div className='bg-[#808080] w-3 h-3 rounded-full' >
+            </div>
+        )
     };
     return (
         <>
             <section>
                 <div className="container">
                     <div className='flex justify-between'>
-                        <div className='w-[20%] border-r'>
-                            <ul className='text-[#000000] font-normal space-y-4 mr-4'>
+                        <div className='w-[20%] relative '>
+                            <div className='absolute -top-8.75 right-0 h-[calc(100%+28px)] w-[2px] bg-secondary/20'></div>
+                            <ul className='text-secondary font-normal space-y-4 mr-4'>
                                 <li className='flex justify-between'>Woman’s Fashion <img src={arrow} alt="" /></li>
                                 <li className='flex justify-between'>Men’s Fashion <img src={arrow} alt="" /> </li>
                                 <li>Electronics</li>
@@ -51,10 +52,10 @@ const Bannar = () => {
                                 <div>
                                     <img src={bannar} alt="" className='w-full' />
                                 </div>
-                                 <div>
+                                <div>
                                     <img src={bannar} alt="" className='w-full' />
                                 </div>
-                                 <div>
+                                <div>
                                     <img src={bannar} alt="" className='w-full' />
                                 </div>
 

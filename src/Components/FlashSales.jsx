@@ -1,22 +1,66 @@
 import React from 'react'
 import SecHead from './SecHead'
 import CountDown from './CountDown'
+import FlashSalesCard from './FlashSalesCard'
+
+import gamepad from '../assets/gamepad.png';
+import keyboard from '../assets/keyboard.png';
+import monitor from '../assets/monitor.png';
+import chair from '../assets/chair.png';
+import Button from './Button';
+
 
 const FlashSales = () => {
   return (
     <>
-    <section>
+      <section className='mt-30.5'>
         <div className="container">
-            <div className='flex items-end gap-22'>
-               <SecHead
-               subtitle="Today’s"
-               title="Flash Sales"
-               /> 
-               <CountDown/>
-            </div>
+          <div className='flex items-end gap-22'>
+            <SecHead
+              subtitle="Today’s"
+              title="Flash Sales"
+            />
+            <CountDown />
+          </div>
+          <div className='flex justify-between mt-10'>
+            <FlashSalesCard
+              image={gamepad}
+              title="HAVIT HV-G92 Gamepad"
+              currentPrice="$120"
+              previousPrice="$160"
+              review="(88)"
+              discount="40%"
+            />
+            <FlashSalesCard
+              image={monitor}
+              title="AK-900 Wired Keyboard"
+              currentPrice="$960"
+              previousPrice="$1160"
+              review="(75)"
+              discount="35%"
+            />
+            <FlashSalesCard
+              image={keyboard}
+              title="IPS LCD Gaming Monitor"
+              currentPrice="$370"
+              previousPrice="$400"
+              review="(99)"
+              discount="30%"
+            />
+            <FlashSalesCard
+              image={chair}
+              title="S-Series Comfort Chair"
+              currentPrice="$375"
+              previousPrice="$400"
+              review="(99)"
+              discount="25%"
+            />
+          </div>
+          <Button className='mx-auto block mt-12.75'>View All Products</Button>
+          <hr className='border border-secondary/20 mt-15' />
         </div>
-    </section>
-      
+      </section>
+
     </>
   )
 }
