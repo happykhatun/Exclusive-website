@@ -20,7 +20,12 @@ const FlashSalesCard = ({ image, discount, title, currentPrice, previousPrice, r
                                 <IoEyeOutline />
                             </div>
                         </div>
-                        <div className='w-14 py-1 px-3 bg-primary rounded-sm text-[12px] font-normal text-[#FAFAFA] absolute top-3 left-3'>-{discount}</div>
+                        {discount && (
+                            <div className='w-14 py-1 px-3 bg-primary rounded-sm text-[12px] font-normal text-[#FAFAFA] absolute top-3 left-3'>
+                                -{discount}
+                            </div>
+                        )}
+                        {/* <div className='w-14 py-1 px-3 bg-primary rounded-sm text-[12px] font-normal text-[#FAFAFA] absolute top-3 left-3'>-{discount}</div> */}
                     </div>
                 </div>
                 <h3 className='font-medium text-[16px] text-secondary mt-4'>{title}</h3>

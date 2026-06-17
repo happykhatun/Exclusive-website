@@ -5,6 +5,7 @@ import Bannar from '../Components/Bannar'
 import FlashSales from '../Components/FlashSales'
 import Categories from '../Components/Categories'
 import ThisMonth from '../Components/ThisMonth'
+import OurProducts from '../Components/OurProducts'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
     <FlashSales/>
     <Categories/>
     <ThisMonth/>
+    <OurProducts/>
     
       
     </>
