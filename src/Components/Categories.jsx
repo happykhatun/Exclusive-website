@@ -9,14 +9,23 @@ import { IoWatchOutline } from "react-icons/io5";
 import { CiCamera } from "react-icons/ci";
 import { PiHeadphonesLight } from "react-icons/pi";
 import { SiYoutubegaming } from "react-icons/si";
-
-
-
-
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import SampleNextArrow from './SampleNextArrow';
+import SamplePrevArrow from './SamplePrevArrow';
 
 
 const Categories = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+    };
     return (
         <>
             <section className='mt-20'>
@@ -27,40 +36,87 @@ const Categories = () => {
                             title="Browse By Category"
                         />
                     </div>
-                    <div className='flex justify-between my-16'>
-                        <CategoriesCard
-                            title="Phones"
-                            icon={<CiMobile4 />}
-                        />
-                        <CategoriesCard
-                            title="Computers"
-                            icon={<CiMonitor />
+                    <div className='relative mt-15'>
+                        <Slider {...settings} className=''>
+                            <div>
+                                <CategoriesCard
+                                    title="Phones"
+                                    icon={<CiMobile4 />}
+                                />
 
-                            }
-                        />
-                        <CategoriesCard
-                            title="SmartWatch"
-                            icon={<IoWatchOutline />
+                            </div>
+                            <div><CategoriesCard
+                                title="Computers"
+                                icon={<CiMonitor />
 
-                            }
-                        />
-                        <CategoriesCard
-                            title="Camera"
-                            icon={<CiCamera />
-                            }
-                        />
-                        <CategoriesCard
-                            title="HeadPhones"
-                            icon={<PiHeadphonesLight />
-                            }
-                        />
-                        <CategoriesCard
-                            title="Gaming"
-                            icon={<SiYoutubegaming />
-                            }
-                        />
+                                }
+                            /></div>
+                            <div>
+                                <CategoriesCard
+                                title="SmartWatch"
+                                icon={<IoWatchOutline />
+
+                                }
+                            />
+                            </div>
+                            <div>
+                                <CategoriesCard
+                                title="Camera"
+                                icon={<CiCamera />
+                                }
+                            />
+                            </div>
+                            <div><CategoriesCard
+                                title="HeadPhones"
+                                icon={<PiHeadphonesLight />
+                                }
+                            /></div>
+                            <div><CategoriesCard
+                                title="Gaming"
+                                icon={<SiYoutubegaming />
+                                }
+                            /></div>
+                            <div>
+                                <CategoriesCard
+                                    title="Phones"
+                                    icon={<CiMobile4 />}
+                                />
+
+                            </div>
+                            <div><CategoriesCard
+                                title="Computers"
+                                icon={<CiMonitor />
+
+                                }
+                            /></div>
+                            <div>
+                                <CategoriesCard
+                                title="SmartWatch"
+                                icon={<IoWatchOutline />
+
+                                }
+                            />
+                            </div>
+                            <div>
+                                <CategoriesCard
+                                title="Camera"
+                                icon={<CiCamera />
+                                }
+                            />
+                            </div>
+                            <div><CategoriesCard
+                                title="HeadPhones"
+                                icon={<PiHeadphonesLight />
+                                }
+                            /></div>
+                            <div><CategoriesCard
+                                title="Gaming"
+                                icon={<SiYoutubegaming />
+                                }
+                            /></div>
+                        </Slider>
                     </div>
-                    <hr className='border border-secondary/20' />
+                    <hr className='border border-secondary/20 mt-17' />
                 </div>
             </section>
 

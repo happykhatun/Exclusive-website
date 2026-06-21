@@ -6,6 +6,8 @@ import FlashSales from '../Components/FlashSales'
 import Categories from '../Components/Categories'
 import ThisMonth from '../Components/ThisMonth'
 import OurProducts from '../Components/OurProducts'
+import Featured from '../Components/Featured'
+import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
     <Categories/>
     <ThisMonth/>
     <OurProducts/>
+    <Featured/>
+    <Footer/>
     
       
     </>

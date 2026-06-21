@@ -17,12 +17,12 @@ import SamplePrevArrow from './SamplePrevArrow';
 
 const FlashSales = () => {
   const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
-        nextArrow: <SampleNextArrow />,
+        nextArrow: <SampleNextArrow/>,
         prevArrow: <SamplePrevArrow />
     };
   return (
@@ -36,7 +36,7 @@ const FlashSales = () => {
             />
             <CountDown />
           </div>
-          <div className='mt-10'>
+          <div className='mt-10 relative'>
 
             <Slider {...settings}>
 
