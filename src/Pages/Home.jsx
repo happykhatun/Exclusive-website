@@ -8,6 +8,7 @@ import ThisMonth from '../Components/ThisMonth'
 import OurProducts from '../Components/OurProducts'
 import Featured from '../Components/Featured'
 import Footer from '../Components/Footer'
+import Music from '../Components/Music'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
     <FlashSales/>
     <Categories/>
     <ThisMonth/>
+    <Music/>
     <OurProducts/>
     <Featured/>
     <Footer/>
