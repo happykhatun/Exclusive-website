@@ -9,9 +9,12 @@ const FlashSalesCard = ({ image, discount, title, currentPrice, previousPrice, r
     return (
         <>
             <div>
-                <div className='w-67.5 rounded-sm'>
+                <div className='w-67.5 rounded-sm group '>
                     <div className='relative'>
                         <img src={image} alt="" />
+                        <div className='w-full bg-secondary font-medium text-white text-center py-2 absolute left-0 bottom-0 rounded-b-sm opacity-0 group-hover:opacity-100 transition-all ease-in duration-200 cursor-pointer'>
+                            Add To Cart
+                        </div>
                         <div className='absolute top-3 right-3'>
                             <div className='bg-white w-8.5 h-8.5 rounded-full flex items-center justify-center'>
                                 <GoHeart />

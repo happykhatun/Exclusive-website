@@ -24,7 +24,7 @@ const OurProducts = () => {
         dots: false,
         infinite: true,
         speed: 500,
-         rows: 2,
+        rows: 2,
         slidesToShow: 4,
         slidesToScroll: 4,
         nextArrow: <SampleNextArrow />,
@@ -32,7 +32,7 @@ const OurProducts = () => {
     };
     return (
         <>
-             <section className='mt-15'>
+            <section className='mt-15'>
                 <div className="container">
                     <div>
                         <SecHead
@@ -40,113 +40,101 @@ const OurProducts = () => {
                             title="Explore Our Products"
                         />
                     </div>
-                    <div className='relative mt-15'>
+                    <div className='relative mt-15 '>
                         <Slider {...settings} >
-                                <FlashSalesCard
-                                    image={dog_food_1}
-                                    title="Breed Dry Dog Food"
-                                    currentPrice="$100"
-                                    review="(35)"
-                                />
-                                <FlashSalesCard
-                                    image={DSLR_camera_2}
-                                    title="CANON EOS DSLR Camera"
-                                    currentPrice="$360"
-                                    review="(95)"
-                                />
-                                <FlashSalesCard
-                                    image={laptop_3}
-                                    title="ASUS FHD Gaming Laptop"
-                                    currentPrice="$700"
-                                    review="(325)"
-                                />
-                                <FlashSalesCard
-                                    image={product_4}
-                                    title="Curology Product Set "
-                                    currentPrice="$500"
-                                    review="(145)"
-                                />
-   
-                                <FlashSalesCard
-                                    image={car_5}
-                                    title="Kids Electric Car"
-                                    currentPrice="$960"
-                                    review="(65)"
-                                />
-                                <FlashSalesCard
-                                    image={cleates_6}
-                                    title="Jr. Zoom Soccer Cleats"
-                                    currentPrice="$1160"
-                                    review="(55)"
-                                />
-                      
-                                <FlashSalesCard
-                                    image={gamepad_7}
-                                    title="Quilted Satin Jacket"
-                                    currentPrice="$660"
-                                    review="(55)"
-                                />
-                                <FlashSalesCard
-                                    image={jacket_8}
-                                    title="Breed Dry Dog Food"
-                                    currentPrice="$660"
-                                    review="(35)"
-                                />
-                                  <FlashSalesCard
-                                    image={dog_food_1}
-                                    title="Breed Dry Dog Food"
-                                    currentPrice="$100"
-                                    review="(35)"
-                                />
-                                <FlashSalesCard
-                                    image={DSLR_camera_2}
-                                    title="CANON EOS DSLR Camera"
-                                    currentPrice="$360"
-                                    review="(95)"
-                                />
-                                <FlashSalesCard
-                                    image={laptop_3}
-                                    title="ASUS FHD Gaming Laptop"
-                                    currentPrice="$700"
-                                    review="(325)"
-                                />
-                                <FlashSalesCard
-                                    image={product_4}
-                                    title="Curology Product Set "
-                                    currentPrice="$500"
-                                    review="(145)"
-                                />
-   
-                                <FlashSalesCard
-                                    image={car_5}
-                                    title="Kids Electric Car"
-                                    currentPrice="$960"
-                                    review="(65)"
-                                />
-                                <FlashSalesCard
-                                    image={cleates_6}
-                                    title="Jr. Zoom Soccer Cleats"
-                                    currentPrice="$1160"
-                                    review="(55)"
-                                />
-                      
-                                <FlashSalesCard
-                                    image={gamepad_7}
-                                    title="Quilted Satin Jacket"
-                                    currentPrice="$660"
-                                    review="(55)"
-                                />
-                                <FlashSalesCard
-                                    image={jacket_8}
-                                    title="Breed Dry Dog Food"
-                                    currentPrice="$660"
-                                    review="(35)"
-                                />
+                            <FlashSalesCard
+                                image={dog_food_1}
+                                title="Breed Dry Dog Food"
+                                currentPrice="$100"
+                                review="(35)"
+                            />
+                            <FlashSalesCard
+                                image={DSLR_camera_2}
+                                title="CANON EOS DSLR Camera"
+                                currentPrice="$360"
+                                review="(95)"
+                            />
+                            <FlashSalesCard
+                                image={laptop_3}
+                                title="ASUS FHD Gaming Laptop"
+                                currentPrice="$700"
+                                review="(325)"
+                            />
+                            <FlashSalesCard
+                                image={product_4}
+                                title="Curology Product Set "
+                                currentPrice="$500"
+                                review="(145)"
+                            />
+
+                            <FlashSalesCard
+                                image={car_5}
+                                title="Kids Electric Car"
+                                currentPrice="$960"
+                                review="(65)"
+                            />
+                            <FlashSalesCard
+                                image={cleates_6}
+                                title="Jr. Zoom Soccer Cleats"
+                                currentPrice="$1160"
+                                review="(55)"
+                            />
+
+                            <FlashSalesCard
+                                image={gamepad_7}
+                                title="Quilted Satin Jacket"
+                                currentPrice="$660"
+                                review="(55)"
+                            />
+                            <FlashSalesCard
+                                image={jacket_8}
+                                title="Breed Dry Dog Food"
+                                currentPrice="$660"
+                                review="(35)"
+                            />
+                            <FlashSalesCard
+                                image={dog_food_1}
+                                title="Breed Dry Dog Food"
+                                currentPrice="$100"
+                                review="(35)"
+                            />
+                            <FlashSalesCard
+                                image={DSLR_camera_2}
+                                title="CANON EOS DSLR Camera"
+                                currentPrice="$360"
+                                review="(95)"
+                            />
+                            <FlashSalesCard
+                                image={laptop_3}
+                                title="ASUS FHD Gaming Laptop"
+                                currentPrice="$700"
+                                review="(325)"
+                            />
+                            <FlashSalesCard
+                                image={product_4}
+                                title="Curology Product Set "
+                                currentPrice="$500"
+                                review="(145)"
+                            />
+
+                            <FlashSalesCard
+                                image={car_5}
+                                title="Kids Electric Car"
+                                currentPrice="$960"
+                                review="(65)"
+                            />
+                            <FlashSalesCard
+                                image={cleates_6}
+                                title="Jr. Zoom Soccer Cleats"
+                                currentPrice="$1160"
+                                review="(55)"
+                            />
                         </Slider>
                     </div>
+
                     <Button className="mx-auto block mt-15">View All Products</Button>
                 </div>
-            </section> 
+            </section>
 
         </>
     )
