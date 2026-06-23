@@ -1,7 +1,7 @@
 import React from 'react'
 import SecHead from './SecHead'
 import Button from './Button';
-import music from '../assets/Music.png';
+import music_img from '../assets/music_img.png';
 import CountDown from './CountDown';
 
 
@@ -11,7 +11,7 @@ const Music = () => {
             <section className='mt-30'>
                 <div className="container">
                     <div className='relative'>
-                        <img src={music} alt="" />
+                        <img src={music_img} alt="" />
                         <div className='absolute top-17.5 left-14'>
                             <SecHead
                                 showBox={false}
