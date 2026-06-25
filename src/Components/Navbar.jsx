@@ -4,6 +4,9 @@ import search from '../assets/search.svg';
 import heart from '../assets/heart.svg';
 import cart from '../assets/cart.svg';
 
+import { NavLink } from "react-router";
+
+
 const Navbar = () => {
     return (
         <>
@@ -14,7 +17,7 @@ const Navbar = () => {
                             <img src={logo} alt="" />
                         </div>
                         <ul className='flex gap-12 text-secondary text-[16px] font-normal'>
-                            <li>Home</li>
+                            <li><NavLink to="/">Home</NavLink></li>
                             <li>Contact</li>
                             <li>About</li>
                             <li>Sign Up</li>
