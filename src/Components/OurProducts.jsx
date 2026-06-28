@@ -66,7 +66,6 @@ const OurProducts = () => {
                                 currentPrice="$500"
                                 review="(145)"
                             />
-
                             <FlashSalesCard
                                 image={car_5}
                                 title="Kids Electric Car"

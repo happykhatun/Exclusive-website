@@ -13,7 +13,7 @@ const CountDown = ({ className, classNameDay,showColon= true }) => {
         }, 1000)
 
     }, [])
-    console.log(count)
+  
     return (
         <>
             <div className='flex gap-10 items-center'>

@@ -32,8 +32,8 @@ const FlashSalesCard = ({ image, discount, title, currentPrice, previousPrice, r
                 </div>
                 <h3 className='font-medium text-[16px] text-secondary mt-4'>{title}</h3>
                 <div className='my-2 flex gap-3'>
-                    <h5 className='font-medium text-[16px] text-primary'>{currentPrice}</h5>
-                    <h5 className='font-medium text-[16px] text-[#695d5de3]'>{previousPrice}</h5>
+                    <h5 className='font-medium text-[16px] text-primary'>${currentPrice}</h5>
+                    <h5 className='font-medium text-[16px] text-[#695d5de3]'>${previousPrice}</h5>
                 </div>
                 <div className='flex items-center gap-2'>
                     <div className='flex'>
@@ -43,7 +43,7 @@ const FlashSalesCard = ({ image, discount, title, currentPrice, previousPrice, r
                         <TiStarFullOutline className='text-[#FFAD33] text-[20px]' />
                         <TiStarFullOutline className='text-[#BFBFBF] text-[20px]' />
                     </div>
-                    <span className='font-semibold text-[14px] text-[#909090]'>{review}</span>
+                    <span className='font-semibold text-[14px] text-[#909090]'>({review})</span>
 
                 </div>
             </div>

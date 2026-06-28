@@ -17,14 +17,14 @@ import SamplePrevArrow from './SamplePrevArrow';
 
 const FlashSales = () => {
   const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        nextArrow: <SampleNextArrow/>,
-        prevArrow: <SamplePrevArrow />
-    };
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
+  };
   return (
     <>
       <section className='mt-30.5'>
@@ -52,22 +52,22 @@ const FlashSales = () => {
               </div>
               <div>
                 <FlashSalesCard
-                  image={monitor}
-                  title="AK-900 Wired Keyboard"
-                  currentPrice="$960"
-                  previousPrice="$1160"
-                  review="(75)"
-                  discount="35%"
-                />
-              </div>
-              <div>
-                <FlashSalesCard
                   image={keyboard}
-                  title="IPS LCD Gaming Monitor"
+                  title="AK-900 Wired Keyboard"
                   currentPrice="$370"
                   previousPrice="$400"
                   review="(99)"
                   discount="30%"
+                />
+              </div>
+              <div>
+                <FlashSalesCard
+                  image={monitor}
+                  title="IPS LCD Gaming Monitor"
+                  currentPrice="$960"
+                  previousPrice="$1160"
+                  review="(75)"
+                  discount="35%"
                 />
               </div>
               <div><FlashSalesCard
@@ -92,7 +92,7 @@ const FlashSales = () => {
               <div>
                 <FlashSalesCard
                   image={monitor}
-                  title="AK-900 Wired Keyboard"
+                  title="IPS LCD Gaming Monitor"
                   currentPrice="$960"
                   previousPrice="$1160"
                   review="(75)"
