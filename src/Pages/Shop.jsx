@@ -21,7 +21,7 @@ const Shop = () => {
       <section className='py-20'>
         <div className="container">
           <Breadcrumb />
-          <div className='flex justify-between'>
+          <div className='flex justify-between mb-5'>
             <h3 className='font-bold text-[20px]'>Shop by Category</h3>
             <div className='space-x-3' >
               <span>Shop :</span>
@@ -32,7 +32,7 @@ const Shop = () => {
               </select>
             </div>
           </div>
-          <div className='flex justify-between'>
+          <div className='flex justify-between '>
             <div className='w-[20%]'>
               <ul className='text-secondary font-normal space-y-4 mr-4'>
                 <li>Woman’s Fashion</li>
@@ -53,10 +53,9 @@ const Shop = () => {
                     
                     <FlashSalesCard
                     image={item.thumbnail}
-                    
                     title={item.title}
                     currentPrice={item.price}
-                    previousPrice="$1160"
+                    previousPrice={(item.price / (1 - item.price / 100)).toFixed(2)}
                     review={item.rating.leanth}
                     discount={item.discountPercentage}
                     />

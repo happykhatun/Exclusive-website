@@ -33,7 +33,7 @@ const FlashSalesCard = ({ image, discount, title, currentPrice, previousPrice, r
                 <h3 className='font-medium text-[16px] text-secondary mt-4'>{title}</h3>
                 <div className='my-2 flex gap-3'>
                     <h5 className='font-medium text-[16px] text-primary'>${currentPrice}</h5>
-                    <h5 className='font-medium text-[16px] text-[#695d5de3]'>${previousPrice}</h5>
+                    <h5 className='font-medium text-[16px] text-[#695d5de3] line-through'>${previousPrice}</h5>
                 </div>
                 <div className='flex items-center gap-2'>
                     <div className='flex'>
